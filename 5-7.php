@@ -16,14 +16,16 @@ class Item
 
 class Book extends Item
 {
-  public function getUnit(): string
+  private int $page;
+  public function __construct(int $unit, int $page)
   {
-    return $this->unit . "冊";
+    parent::__construct($unit);
+    $this->page = $page;
   }
 }
 
 $eraser = new Item(5);
 echo $eraser->getUnit(), "\n";
 
-$book = new Book(5);
+$book = new Book(5, 5);
 echo $book->getUnit();
