@@ -7,6 +7,6 @@ $items = [
 $file = new SplFileObject("data/items.csv", "w");
 
 foreach($items as $item){
-  $file->fputcsv($item);
+  $file->fputcsv($item<?);
 } 
 
