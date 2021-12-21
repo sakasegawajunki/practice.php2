@@ -9,5 +9,4 @@ $add_el = $items->addChild("item");
 $add_el->addChild("name", "Go入門");
 $add_el->addChild("price", "3000");
 
-// 
 // $items->asXML("data/items.xml");
